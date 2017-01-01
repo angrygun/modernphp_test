@@ -1,0 +1,13 @@
+{
+    "require": {
+        "willdurand/geocoder": "2.8.2",
+        "php-http/httplug": "^1.1",
+        "php-http/curl-client": "^1.6",
+        "guzzlehttp/guzzle": "^6.2",
+        "league/csv": "^8.1",
+        "monolog/monolog": "^1.22",
+        "filp/whoops": "~1.0",
+        "swiftmailer/swiftmailer": "~5.3"
+
+    }
+}

@@ -5,9 +5,6 @@ php:
   #- hhvm
 before_install:
   - phpenv config-rm xdebug.ini
-  - sudo chmod 775 -R vendor
-  - sudo chmod 775 vendor/phpunit/phpunit
-  - sudo chmod 775 vendor/phpunit/phpunit/phpunit && chmod +x vendor/phpunit/phpunit/phpunit 
 install:
   - composer install --no-dev --quiet 
-script: vendor/bin/phpunit
+script: phpunit --bootstrap phpunit_test/tests/bootstrap.php phpunit_test/tests

@@ -1,5 +1,5 @@
-composer.lock
-config/
-lib/
-log/
-Capfile
+/composer.lock
+/config/
+/lib/
+/log/
+/Capfile

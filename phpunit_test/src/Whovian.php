@@ -40,7 +40,7 @@ class Whovian
         $myDoctor = strtolower($this->favoriteDoctor);
 
         if (strpos($input, $myDoctor) === false) {
-            throw new Exception(
+           throw new Exception(
                 sprintf(
                     'No way! %s is the best doctor ever',
                     $this->favoriteDoctor

@@ -1,20 +1,15 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/14 15:26
- */
 
 /* php://流封装协议 */
 
 // php://stdin
-    # 这是个只读流，其中的数据来自标准输入。例如，PHP脚本可以使用这个流接受命令行传入脚本的信息。
+# 这是个只读流，其中的数据来自标准输入。例如，PHP脚本可以使用这个流接受命令行传入脚本的信息。
 // php://stdout
-    # 这个PHP流的作用是把数据写入当前的输出缓冲区。这个流只能写，无法读或寻址。
+# 这个PHP流的作用是把数据写入当前的输出缓冲区。这个流只能写，无法读或寻址。
 // php://memory
-    # 这个PHP流的作用是从系统内存中读取数据，或者把数据写入系统内存。这个PHP流的缺点是，可用内存是有限的。使用php://temp流更安全。
+# 这个PHP流的作用是从系统内存中读取数据，或者把数据写入系统内存。这个PHP流的缺点是，可用内存是有限的。使用php://temp流更安全。
 // php://temp
-    # 这个php流的作用和php://memory类似，不过，没有可用内存时，PHP会把数据写入临时文件。
+# 这个php流的作用和php://memory类似，不过，没有可用内存时，PHP会把数据写入临时文件。
 
 
 /* 流上下文
@@ -24,7 +19,7 @@
  */
 
 // 流上下文
-    # 你知道可以使用file_get_contents()函数发送HTTP POST请求吗？
+# 你知道可以使用file_get_contents()函数发送HTTP POST请求吗？
 
 
 /* post json格式数据 */
@@ -33,7 +28,7 @@ $context = stream_context_create(array(
     'http' => array(
         'method' => 'POST',
         'header' => 'Content-Type: application/json;charset=utf-8;\r\n' .
-                    'Content-Length: ' . mb_strlen($requestBody),
+            'Content-Length: ' . mb_strlen($requestBody),
         'content' => $requestBody
     )
 ));
@@ -42,15 +37,15 @@ echo $response;
 
 
 /* post 正常格式数据 */
-    /*$requestBody = ["username"=>"josh"];
-    $requestBody1 = http_build_query($requestBody);
-    $context = stream_context_create(array(
-        'http' => array(
-            'method' => 'POST',
-            'header' => 'Content-Type:  application/x-www-form-urlencoded;charset=utf-8;\r\n' .
-                'Content-Length: ' . mb_strlen($requestBody1),
-            'content' => $requestBody1
-        )
-    ));
-    $response = file_get_contents('http://localhost/modernphp/stream/test.php', false, $context);
-    echo $response;*/
+/*$requestBody = ["username"=>"josh"];
+$requestBody1 = http_build_query($requestBody);
+$context = stream_context_create(array(
+    'http' => array(
+        'method' => 'POST',
+        'header' => 'Content-Type:  application/x-www-form-urlencoded;charset=utf-8;\r\n' .
+            'Content-Length: ' . mb_strlen($requestBody1),
+        'content' => $requestBody1
+    )
+));
+$response = file_get_contents('http://localhost/modernphp/stream/test.php', false, $context);
+echo $response;*/

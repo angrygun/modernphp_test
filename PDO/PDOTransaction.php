@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/13 18:03
- */
 
 /* 使用事务执行数据库查询 */
 

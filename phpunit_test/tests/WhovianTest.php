@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2017/1/9 17:33
- */
+
 require dirname(__DIR__) . '/src/Whovian.php';
 
 class WhovianTest extends PHPUnit_Framework_TestCase

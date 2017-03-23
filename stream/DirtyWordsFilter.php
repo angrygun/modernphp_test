@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/19 18:18
- */
 
 /* 自定义流过滤器
  *
@@ -45,7 +40,7 @@ class DirtyWordsFilter extends php_user_filter
             $bucket->data = str_replace($bad, $good, $bucket->data);
 
             // 增加已处理的数量
-            $consumed +=$bucket->datalen;
+            $consumed += $bucket->datalen;
 
             // 把桶放入流向下游的队列中
             stream_bucket_append($out, $bucket);

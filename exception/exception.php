@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/19 18:57
- */
 
 /*
  * Exception对象与其他任何PHP对象一样，使用new关键字实例化。

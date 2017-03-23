@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/30 17:14
- */
 
 /*
  * 我们应该使用Apache Bench(http://bit.ly/apache-bench)或Seige(http://www.joedog.org/siege-home/),在类似生产环境的条件下对PHP应用做压力测试，因为最好在把应用部署到生产环境之前却id那个是否又足够的资源可用

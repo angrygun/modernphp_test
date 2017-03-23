@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/13 16:24
- */
 
 require 'settings.php';
 

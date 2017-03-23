@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/20 18:31
- */
 
 /*
  * 添加一个Monolog处理程序，把重要的提醒或突发错误通过电子邮件发给管理员。

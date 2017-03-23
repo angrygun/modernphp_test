@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/19 15:10
- */
 
 /* 流过滤器
  *
@@ -17,7 +12,7 @@
 
 $handle = fopen('test.txt', 'rb');
 stream_filter_append($handle, 'string.toupper');
-while(feof($handle) !==true) {
+while (feof($handle) !== true) {
     echo fgets($handle);// 输出的全是大写字母
 }
 fclose($handle);
@@ -37,7 +32,7 @@ echo '<hr/>';
  * */
 
 $handle1 = fopen('php://filter/read=string.toupper/resource=test.txt', 'rb');
-while(feof($handle1) !== true) {
+while (feof($handle1) !== true) {
     echo fgets($handle1);// 输出的全是大写字母
 }
 fclose($handle1);
@@ -57,7 +52,7 @@ foreach ($datePeriod as $date) {
         stream_filter_append($handle2, 'bzip2.decompress');// 使用bzip2.decompress流过滤器可以在读取日志文件的同时自动解压缩。除此之外，我们还可以使用shell_exec()或bzdecompress()函数，手动把日志文件解压缩到临时目录中，然后迭代解压缩后的文件，等PHP脚本完成任务后再清理这些解压缩后的文件。不过，使用PHP流更简单，也更优雅。
         while (feof($handle2) !== true) {
             $line = fgets($handle2);
-            if (strpos($line,'www.example.com') !== false) {
+            if (strpos($line, 'www.example.com') !== false) {
                 fwrite(STDOUT, $line);
             }
         }

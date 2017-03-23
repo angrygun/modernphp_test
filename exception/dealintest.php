@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/20 15:39
- */
 
 /* 注册Whoops提供的处理程序 */
 

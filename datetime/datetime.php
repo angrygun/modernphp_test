@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/2 15:36
- */
+
 date_default_timezone_set('PRC');
 $datetime = new DateTime('2014-01-01 14:00:00');// 创建DateTime实例
 $interval = new DateInterval('P2W');// 创建长度为两周的间隔

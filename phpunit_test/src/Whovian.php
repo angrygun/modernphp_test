@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2017/1/9 17:05
- */
+
 class Whovian
 {
     /*
@@ -35,12 +31,13 @@ class Whovian
      * @return string
      * @throws \Exception
      * */
-    public function respondTo($input){
+    public function respondTo($input)
+    {
         $input = strtolower($input);
         $myDoctor = strtolower($this->favoriteDoctor);
 
         if (strpos($input, $myDoctor) === false) {
-           throw new Exception(
+            throw new Exception(
                 sprintf(
                     'No way! %s is the best doctor ever',
                     $this->favoriteDoctor

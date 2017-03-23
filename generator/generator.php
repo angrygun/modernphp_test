@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/8 20:39
- */
+
 /*生成器*/
 function myGenerator()
 {

@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/14 15:00
- */
 
 /* 使用HTTP流封装协议与Flickr API通信
  *

@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/9 11:15
- */
 
 /*创建简单的闭包*/
 $closure = function ($name) {

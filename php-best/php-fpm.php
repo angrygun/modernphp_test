@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/30 18:26
- */
 
 /*
  * PHP-FPM（PHP FastCGI Process Manager的简称，意思是“PHP FastCGI进程管理器”）是用于管理PHP进程池的软件，用于接收和处理来自Web服务器（例如nginx）的请求。PHP-FPM软件会创建一个主进程（通常以草错系统中根用户的身份运行），控制何时以及如何把HTTP请求转发给一个或多个子进程处理。PHP-FPM主进程还控制什么时候创建（处理Web应用更多的流量）和销毁（子进程运行时间太久或不再需要了）PHP子进程。PHP-FPM进程池中的每个进程存在的时间都比单个HTTP请求长，可以处理10、50、100、500或者更多的HTTP请求。

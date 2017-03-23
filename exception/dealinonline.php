@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/20 18:16
- */
 
 /* 在生产环境中使用Monolog记录日志 */
 

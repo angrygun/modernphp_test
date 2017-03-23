@@ -1,13 +1,9 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/7 16:35
- */
 
 include '../vendor/autoload.php';
 
-trait Geocodable{
+trait Geocodable
+{
     /*@var string*/
     protected $address;
 
@@ -19,12 +15,12 @@ trait Geocodable{
 
     public function setGeocoder(\Geocoder\GeocoderInterface $geocoder)
     {
-        $this->geocoder=$geocoder;
+        $this->geocoder = $geocoder;
     }
 
     public function setAddress($address)
     {
-        $this->address=$address;
+        $this->address = $address;
     }
 
     public function getLatitude()
@@ -57,6 +53,7 @@ class RetailStore
 {
     use Geocodable;
 }
+
 //2.8.2版本以上实现代码
 /*$geocoderAdapter = new \Ivory\HttpAdapter\CurlHttpAdapter();
 $geocoderProvider = new \Geocoder\Provider\GoogleMaps($geocoderAdapter);

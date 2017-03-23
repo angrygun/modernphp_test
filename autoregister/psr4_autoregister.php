@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/10 16:13
- */
 
 /*
  * 举例说明如何实现项目专用的自动加载器

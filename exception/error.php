@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by coder meng.
- * User: coder meng
- * Date: 2016/12/19 21:08
- */
 
 /*
  * 错误处理程序
